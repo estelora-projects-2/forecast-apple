@@ -1,4 +1,4 @@
-#Panes / WeatherDates
+#WeatherDates
 
 ###Appointment Management app that includes the weather forecast
 
