@@ -1,3 +1,16 @@
+Skip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @estelora
+ Unwatch 1
+  Star 0
+ Fork 0estelora-projects-2/forecast-apple
+ branch: master  forecast-apple/css/panes.css
+@esteloraestelora 10 minutes ago worked in wrong folder, new jQuery popup added
+1 contributor
+RawBlameHistory     420 lines (362 sloc)  7.622 kB
 body {
   background-color: floralwhite;
 }
@@ -12,7 +25,26 @@ body {
   -moz-box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.5);
   box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.5);
 }
+#directions {
+  color: black;
+  background-color: floralwhite;
+  border-radius: 100px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 28px;
+  text-align: center;
+  line-height: 30px;
+  padding: 1%;
+  width: 45%;
+  margin-left: 25%;
+  margin-top: 7%;
+  border-right: 1px groove black;
+  border-bottom: 1px groove black;
+  transition: 1s;
+}
 
+.add-message {
+  font-size: 30px;
+}
 .spanel-1 {
   padding 1%;
   margin-bottom: 2%;
@@ -213,7 +245,7 @@ input {
   border-radius: 4px;
   padding: 1% 2%;
   margin: auto;
-  width: 25%;
+  width: 30%;
   font-size: 20px;
   font-weight: 700;
   display: block;
@@ -343,6 +375,9 @@ input {
     font-size: 22px;
     color: #3d3c39;
 }
+.weather-description {
+  text-transform: capitalize;
+}
 
 .map-widget {
     width: 300px;
@@ -379,19 +414,4 @@ input {
   text-shadow: 1px 1px 3px rgba(255, 251, 240, 1);
   transition: 30ms;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
