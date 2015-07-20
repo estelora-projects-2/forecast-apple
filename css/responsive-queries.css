@@ -37,6 +37,11 @@
   .save {
     width: 35%;
   }
+  #directions {
+    padding: 3%;
+    width: 50%;
+    margin-left: 22%;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -62,6 +67,12 @@
   .map {
     padding: 2%;
   }
+  #directions {
+    padding: 4%;
+    width: 57%;
+    ç
+    font-size: 24px;
+  }
 }
 
 @media all and (max-width: 475px) {
@@ -86,6 +97,11 @@
   .header-icon {
   padding-right: 4%;
   }
+  #directions {
+    padding: 5%;
+    margin-left: 17%;
+    font-size: 22px;
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -95,6 +111,11 @@
   }
   .header-text {
     padding: 3% 3% 1%;
+  }
+   #directions {
+    padding: 5%;
+    margin-left: 14%;
+    font-size: 18px;
   }
   .tab {
     padding-left: 17% !important;

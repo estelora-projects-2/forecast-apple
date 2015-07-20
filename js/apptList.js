@@ -19,6 +19,7 @@ function AppointmentList() {
   //   AppointmentList so they get it back
   var self = {};
 
+
   self.save = function() {
     storage.save(list);
   }
