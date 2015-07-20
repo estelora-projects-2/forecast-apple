@@ -1,18 +1,3 @@
-Skip to content
-This repository  
-Pull requests
-Issues
-Gist
- @estelora
- Unwatch 1
-  Star 0
- Fork 0estelora-projects-2/forecast-apple
- branch: master  forecast-apple/js/apptList.js
-@esteloraestelora 10 minutes ago worked in wrong folder, new jQuery popup added
-1 contributor
-RawBlameHistory     49 lines (39 sloc)  1.167 kB
-// Copied from the trello:
-// AppointmentList needs to be able to:
 // - Add an appointment
 // - Delete an appointment
 // - Give us access to the array (the `list` var)
@@ -58,6 +43,3 @@ function AppointmentList() {
 
   return self;
 }
-
-Status API Training Shop Blog About Help
-© 2015 GitHub, Inc. Terms Privacy Security Contact
