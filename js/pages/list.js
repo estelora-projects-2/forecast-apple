@@ -16,7 +16,12 @@ var ListPage = {
   // make the list in html
   render: function() {
     var list = App.appts.getList();
-
+    if(list.length < 1 ) {
+      var $directionsDiv = $('#directions');
+      $directionsDiv.show().html('to make appointments,</br>click<span class="icon-plus"></span>on the right'); // show and set the message
+      setTimeout(function(){ $directionsDiv.hide().html('');}, 2000); 
+                                                             
+    }
 
     /*
      * SYNTAX: $.get("url", function)
@@ -38,12 +43,7 @@ var ListPage = {
       });
     });
 
-    if(list.length < 1 ) {
-      var $directionsDiv = $('#directions');
-      $directionsDiv.show().html('to make appointments,</br>click<span class="icon-plus"></span>on the right'); // show and set the message
-      setTimeout(function(){ $directionsDiv.hide().html('');}, 2000); 
-                                                             
-    }
+    
   },
 
   onClickNewAppt: function() {
