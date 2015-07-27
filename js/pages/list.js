@@ -50,7 +50,9 @@ var ListPage = {
       var $directionsDiv = $('#directions');
       $directionsDiv.show().html('to make appointments,</br>click<span class="icon-plus"></span>on the right'); // show and set the message
       setTimeout(function(){ $directionsDiv.hide().html('');}, 2000); 
-      
+    } else {
+      $('#directions').hide();
+    
     }
   },
 
