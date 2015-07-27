@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #weatherDates
-=======
-#Panes / WeatherDates
->>>>>>> master
 
 ###Appointment Management app that includes the weather forecast
 
@@ -11,4 +7,3 @@
 - Responsive Design
 - Persists Appointment Data in Local Storage
 - Calls WeatherMap API based on location
-# weatherDates
