@@ -2,156 +2,180 @@
 
 <html>
 
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Maven+Pro:400,500' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
-    <title>Weather Dates</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/panes.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/responsive-queries.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
-     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="icons/css/fontello.css">
-  </head>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Maven+Pro:400,500' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Weather Dates</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/panes.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/responsive-queries.css">
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="img/manifest.json">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-  <body>
+  <link rel="stylesheet" href="icons/css/fontello.css">
+</head>
 
-    <div class="spane-content"></div>
+<body>
 
-    <script id="spane-list" type="text/html">
-      <div class="spanel-1">
+  <div class="spane-content"></div>
 
-        <div class="header">
+  <script id="spane-list" type="text/html">
+    <div class="spanel-1">
 
-          <span class="header-text">my appointments</span>
-          <label class="header-icon right">
-            <input type="checkbox" class="add-box">
-            <span class="icon-plus"></span>
-          </label>
-        </div>
-        
-        <div id="directions"></div>
+      <div class="header">
 
-        <ul class="appt-list"></ul>
-
+        <span class="header-text">my appointments</span>
+        <label class="header-icon right">
+          <input type="checkbox" class="add-box">
+          <span class="icon-plus"></span>
+        </label>
       </div>
-    </script>
+      <div id="directions"></div>
 
-    <script id="spane-create" type="text/html">
-      <div class="spanel-2">
+      <span class="header-text">my appointments</span>
+      <label class="header-icon right">
+        <input type="checkbox" class="add-box">
+        <span class="icon-plus"></span>
+      </label>
+    </div>
+    
+    <div id="directions"></div>
+    <ul class="appt-list"></ul>
 
-        <div class="header">
-          <label class="back-spane1 header-icon">
-            <input type="checkbox" class="add-box">
-            <span class="icon-left-dir"></span>
-          </label>
-          <span class="header-text tab">New Appointment</span>
+  </div>
+</script>
+
+
+<script id="spane-create" type="text/html">
+  <div class="spanel-2">
+
+    <div class="header">
+      <label class="back-spane1 header-icon">
+        <input type="checkbox" class="add-box">
+        <span class="icon-left-dir"></span>
+      </label>
+      <span class="header-text tab">New Appointment</span>
+    </div>
+
+    <div class="form-list">
+      <form class="appt-data edit-data">
+
+        <div class="input-box">
+          <span class="icon-th-list list-icon"></span>
+          Title:
+          <input type="text" name="Title" placeholder="" size="15" maxlength="30" class="create-title create-input"/>
         </div>
 
-        <div class="form-list">
-          <form class="appt-data edit-data">
-
-            <div class="input-box">
-              <span class="icon-th-list list-icon"></span>
-              Title:
-              <input type="text" name="Title" placeholder="" size="15" maxlength="30" class="create-title create-input"/>
-            </div>
-
-            <div class="input-box">
-              <span class="icon-calendar-alt list-icon"></span>
-              Date:
-              <!-- no maxlength for dates, confusing for the computer -->
-              <input type="date" name="Date" placeholder="" size="15" class="create-date create-input"/>
-            </div>
-
-            <div class="input-box">
-              <span class="icon-clock-alt list-icon"></span>
-              Time:
-              <input type="time" name="Time" placeholder="" size="15" maxlength="30" class="create-time create-input"/>
-            </div>
-
-            <div class="input-box">
-              <span class="icon-home list-icon"></span>
-              Street:
-              <input type="text" name="Street" placeholder="" size="15" maxlength="30" class="create-street create-input"/>
-            </div>
-
-            <div class="input-box">
-              <span class="icon-location list-icon"></span>
-              City:
-              <input type="text" name="City" placeholder="" size="15" maxlength="30" class="create-city create-input" />
-            </div>
-
-            <div class="input-box">
-              <span class="icon-location list-icon"></span>
-              State:
-              <input type="text" name="State" placeholder="__" size="2" maxlength="30" class="create-state create-input"/>
-            </div>
-
-            <div class="input-box">
-              <input type="button" value="Make the Date!" class="save change-details">
-            </div>
-
-          </form>
+        <div class="input-box">
+          <span class="icon-calendar-alt list-icon"></span>
+          Date:
+          <!-- no maxlength for dates, confusing for the computer -->
+          <input type="date" name="Date" placeholder="" size="15" class="create-date create-input"/>
         </div>
 
-      </div>
-    </script>
-
-    <script id="spane-detail" type="text/html">
-      <div class="spanel-3">
-
-        <div class="header">
-          <label class="back-spane1 header-icon left">
-            <input type="checkbox" class="add-box">
-            <span class="icon-left-dir"></span>
-          </label>
-          <span class="header-text tab">details</span>
-          <label class="edit header-icon right">
-            <input type="checkbox" class="add-box">
-            <span class="icon-pencil"></span>
-          </label>
+        <div class="input-box">
+          <span class="icon-clock-alt list-icon"></span>
+          Time:
+          <input type="time" name="Time" placeholder="" size="15" maxlength="30" class="create-time create-input"/>
         </div>
 
-        <div class="detail"></div>
-
-      </div>
-    </script>
-
-    <script id="spane-edit" type="text/html">
-      <div class="spanel-4">
-
-        <div class="header">
-          <label class="back-spane1 header-icon left">
-            <input type="checkbox" class="add-box">
-            <span class="icon-left-dir"></span>
-          </label>
-          <span class="header-text tab">Edit Appointment</span>
-          </span>
-        </div>
-        <div class="form-list">
-          <form class="appt-data edit-data"></form>
+        <div class="input-box">
+          <span class="icon-home list-icon"></span>
+          Street:
+          <input type="text" name="Street" placeholder="" size="15" maxlength="30" class="create-street create-input"/>
         </div>
 
-      </div>
-    </script>
+        <div class="input-box">
+          <span class="icon-location list-icon"></span>
+          City:
+          <input type="text" name="City" placeholder="" size="15" maxlength="30" class="create-city create-input" />
+        </div>
+
+        <div class="input-box">
+          <span class="icon-location list-icon"></span>
+          State:
+          <input type="text" name="State" placeholder="__" size="2" maxlength="30" class="create-state create-input"/>
+        </div>
+
+        <div class="input-box">
+          <input type="button" value="Make the Date!" class="save change-details">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</script>
+
+<script id="spane-detail" type="text/html">
+  <div class="spanel-3">
+
+    <div class="header">
+      <label class="back-spane1 header-icon left">
+        <input type="checkbox" class="add-box">
+        <span class="icon-left-dir"></span>
+      </label>
+      <span class="header-text tab">details</span>
+      <label class="edit header-icon right">
+        <input type="checkbox" class="add-box">
+        <span class="icon-pencil"></span>
+      </label>
+    </div>
+
+    <div class="detail"></div>
+
+  </div>
+</script>
+
+<script id="spane-edit" type="text/html">
+  <div class="spanel-4">
+
+    <div class="header">
+      <label class="back-spane1 header-icon left">
+        <input type="checkbox" class="add-box">
+        <span class="icon-left-dir"></span>
+      </label>
+      <span class="header-text tab">Edit Appointment</span>
+    </span>
+  </div>
+  <div class="form-list">
+    <form class="appt-data edit-data"></form>
+  </div>
+
+</div>
+</script>
 
 
-    <script id="appt-list-template" type="text/html"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/lodash/lodash.js"></script>
-    <script src="bower_components/moment/moment.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/pages/create.js"></script>
-    <script src="js/pages/details.js"></script>
-    <script src="js/pages/edit.js"></script>
-    <script src="js/pages/list.js"></script>
-    <script src="js/apptList.js"></script>
-    <script src="js/apptStorage.js"></script>
-    <script src="js/app.js"></script>
+<script id="appt-list-template" type="text/html"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/pages/create.js"></script>
+<script src="js/pages/details.js"></script>
+<script src="js/pages/edit.js"></script>
+<script src="js/pages/list.js"></script>
+<script src="js/apptList.js"></script>
+<script src="js/apptStorage.js"></script>
+<script src="js/app.js"></script>
 
-  </body>
+</body>
 
 </html>

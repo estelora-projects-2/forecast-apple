@@ -8,12 +8,3 @@ var App = {
 ListPage.load();
 ListPage.render();
 
-
-var snow = newArray('tire', 'tire', 'tire', 'tire');
-for (var i = 0; i < snow.length; i++) {
-    console.log('snow' + i + "isn't available");
-  }
-}
-
-if(snow [i]) {
-    console.log

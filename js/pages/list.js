@@ -20,15 +20,16 @@ var ListPage = {
       var $directionsDiv = $('#directions');
       $directionsDiv.show().html('to make appointments,</br>click<span class="icon-plus"></span>on the right'); // show and set the message
       setTimeout(function(){ $directionsDiv.hide().html('');}, 2000); 
-                                                             
+      
     }
+
 
     /*
      * SYNTAX: $.get("url", function)
      * create a local server  in terminal: python -m SimpleHTTPServer
      * type "localhost:8000" in browser to use the website
      */
-    $.get("template/appt-list.html", function(template) {
+     $.get("template/appt-list.html", function(template) {
       var listTemplate = _.template(template);
       var html = listTemplate({
         list: list
@@ -42,8 +43,15 @@ var ListPage = {
         DetailsPage.load(appt);
       });
     });
-
+    //console.log(list.length);
     
+    if(list.length < 1 ) {
+      //alert('check');
+      var $directionsDiv = $('#directions');
+      $directionsDiv.show().html('to make appointments,</br>click<span class="icon-plus"></span>on the right'); // show and set the message
+      setTimeout(function(){ $directionsDiv.hide().html('');}, 2000); 
+      
+    }
   },
 
   onClickNewAppt: function() {
