@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#weatherDates
+=======
 #Panes / WeatherDates
+>>>>>>> master
 
 ###Appointment Management app that includes the weather forecast
 

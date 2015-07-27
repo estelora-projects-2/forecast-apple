@@ -49,108 +49,117 @@
       </div>
       <div id="directions"></div>
 
-      <ul class="appt-list"></ul>
-
+      <span class="header-text">my appointments</span>
+      <label class="header-icon right">
+        <input type="checkbox" class="add-box">
+        <span class="icon-plus"></span>
+      </label>
     </div>
-  </script>
+    
+    <div id="directions"></div>
+    <ul class="appt-list"></ul>
 
-  <script id="spane-create" type="text/html">
-    <div class="spanel-2">
+  </div>
+</script>
 
-      <div class="header">
-        <label class="back-spane1 header-icon">
-          <input type="checkbox" class="add-box">
-          <span class="icon-left-dir"></span>
-        </label>
-        <span class="header-text tab">New Appointment</span>
-      </div>
 
-      <div class="form-list">
-        <form class="appt-data edit-data">
+<script id="spane-create" type="text/html">
+  <div class="spanel-2">
 
-          <div class="input-box">
-            <span class="icon-th-list list-icon"></span>
-            Title:
-            <input type="text" name="Title" placeholder="" size="15" maxlength="30" class="create-title create-input"/>
-          </div>
-
-          <div class="input-box">
-            <span class="icon-calendar-alt list-icon"></span>
-            Date:
-            <!-- no maxlength for dates, confusing for the computer -->
-            <input type="date" name="Date" placeholder="" size="15" class="create-date create-input"/>
-          </div>
-
-          <div class="input-box">
-            <span class="icon-clock-alt list-icon"></span>
-            Time:
-            <input type="time" name="Time" placeholder="" size="15" maxlength="30" class="create-time create-input"/>
-          </div>
-
-          <div class="input-box">
-            <span class="icon-home list-icon"></span>
-            Street:
-            <input type="text" name="Street" placeholder="" size="15" maxlength="30" class="create-street create-input"/>
-          </div>
-
-          <div class="input-box">
-            <span class="icon-location list-icon"></span>
-            City:
-            <input type="text" name="City" placeholder="" size="15" maxlength="30" class="create-city create-input" />
-          </div>
-
-          <div class="input-box">
-            <span class="icon-location list-icon"></span>
-            State:
-            <input type="text" name="State" placeholder="__" size="2" maxlength="30" class="create-state create-input"/>
-          </div>
-
-          <div class="input-box">
-            <input type="button" value="Make the Date!" class="save change-details">
-          </div>
-
-        </form>
-      </div>
-
+    <div class="header">
+      <label class="back-spane1 header-icon">
+        <input type="checkbox" class="add-box">
+        <span class="icon-left-dir"></span>
+      </label>
+      <span class="header-text tab">New Appointment</span>
     </div>
-  </script>
 
-  <script id="spane-detail" type="text/html">
-    <div class="spanel-3">
-
-      <div class="header">
-        <label class="back-spane1 header-icon left">
-          <input type="checkbox" class="add-box">
-          <span class="icon-left-dir"></span>
-        </label>
-        <span class="header-text tab">details</span>
-        <label class="edit header-icon right">
-          <input type="checkbox" class="add-box">
-          <span class="icon-pencil"></span>
-        </label>
-      </div>
-
-      <div class="detail"></div>
-
-    </div>
-  </script>
-
-  <script id="spane-edit" type="text/html">
-    <div class="spanel-4">
-
-      <div class="header">
-        <label class="back-spane1 header-icon left">
-          <input type="checkbox" class="add-box">
-          <span class="icon-left-dir"></span>
-        </label>
-        <span class="header-text tab">Edit Appointment</span>
-      </span>
-    </div>
     <div class="form-list">
-      <form class="appt-data edit-data"></form>
+      <form class="appt-data edit-data">
+
+        <div class="input-box">
+          <span class="icon-th-list list-icon"></span>
+          Title:
+          <input type="text" name="Title" placeholder="" size="15" maxlength="30" class="create-title create-input"/>
+        </div>
+
+        <div class="input-box">
+          <span class="icon-calendar-alt list-icon"></span>
+          Date:
+          <!-- no maxlength for dates, confusing for the computer -->
+          <input type="date" name="Date" placeholder="" size="15" class="create-date create-input"/>
+        </div>
+
+        <div class="input-box">
+          <span class="icon-clock-alt list-icon"></span>
+          Time:
+          <input type="time" name="Time" placeholder="" size="15" maxlength="30" class="create-time create-input"/>
+        </div>
+
+        <div class="input-box">
+          <span class="icon-home list-icon"></span>
+          Street:
+          <input type="text" name="Street" placeholder="" size="15" maxlength="30" class="create-street create-input"/>
+        </div>
+
+        <div class="input-box">
+          <span class="icon-location list-icon"></span>
+          City:
+          <input type="text" name="City" placeholder="" size="15" maxlength="30" class="create-city create-input" />
+        </div>
+
+        <div class="input-box">
+          <span class="icon-location list-icon"></span>
+          State:
+          <input type="text" name="State" placeholder="__" size="2" maxlength="30" class="create-state create-input"/>
+        </div>
+
+        <div class="input-box">
+          <input type="button" value="Make the Date!" class="save change-details">
+        </div>
+
+      </form>
     </div>
 
   </div>
+</script>
+
+<script id="spane-detail" type="text/html">
+  <div class="spanel-3">
+
+    <div class="header">
+      <label class="back-spane1 header-icon left">
+        <input type="checkbox" class="add-box">
+        <span class="icon-left-dir"></span>
+      </label>
+      <span class="header-text tab">details</span>
+      <label class="edit header-icon right">
+        <input type="checkbox" class="add-box">
+        <span class="icon-pencil"></span>
+      </label>
+    </div>
+
+    <div class="detail"></div>
+
+  </div>
+</script>
+
+<script id="spane-edit" type="text/html">
+  <div class="spanel-4">
+
+    <div class="header">
+      <label class="back-spane1 header-icon left">
+        <input type="checkbox" class="add-box">
+        <span class="icon-left-dir"></span>
+      </label>
+      <span class="header-text tab">Edit Appointment</span>
+    </span>
+  </div>
+  <div class="form-list">
+    <form class="appt-data edit-data"></form>
+  </div>
+
+</div>
 </script>
 
 

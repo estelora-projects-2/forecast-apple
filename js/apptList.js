@@ -1,5 +1,3 @@
-// Copied from the trello:
-// AppointmentList needs to be able to:
 // - Add an appointment
 // - Delete an appointment
 // - Give us access to the array (the `list` var)
@@ -45,4 +43,3 @@ function AppointmentList() {
 
   return self;
 }
-
